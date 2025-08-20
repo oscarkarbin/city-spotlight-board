@@ -4,53 +4,53 @@ import { Check, Crown, Star, Zap } from "lucide-react";
 const PricingSection = () => {
   const plans = [
     {
-      name: "Gratis Inlägg",
+      name: "Privat",
       price: "Gratis",
-      description: "Perfekt för invånare som vill dela med grannar",
+      description: "För dig som vill annonsera till grannar",
       features: [
-        "Obegränsade lokala inlägg",
-        "Automatisk platsdetektering", 
-        "Grundläggande kategorier",
-        "7 dagars varaktighet",
-        "Invånarengagemang"
+        "Lägg upp annonser gratis",
+        "Hittar din stad automatiskt", 
+        "Vanliga kategorier",
+        "Syns i 7 dagar",
+        "Chatta med intresserade"
       ],
-      buttonText: "Börja Posta",
+      buttonText: "Börja Annonsera",
       buttonVariant: "outline" as const,
       popular: false,
       icon: <Star className="w-6 h-6" />
     },
     {
-      name: "Lokalt Företag",
+      name: "Företag",
       price: "299",
       period: " kr/mån",
-      description: "Öka ditt lokala företags synlighet",
+      description: "Syns bättre och når fler kunder",
       features: [
-        "Allt i Gratis-planen",
-        "Utvalda företagsinlägg",
-        "30 dagars varaktighet",
-        "Företagsprofilsida",
-        "Prioriterad placering",
-        "Analysdashboard"
+        "Allt som Privat har",
+        "Företagsannonser som syns mer",
+        "Syns i 30 dagar",
+        "Egen företagssida",
+        "Hamnar högre upp",
+        "Se hur många som tittar"
       ],
-      buttonText: "Marknadsför Mitt Företag",
+      buttonText: "Marknadsför Företaget",
       buttonVariant: "sponsor" as const,
       popular: true,
       icon: <Zap className="w-6 h-6" />
     },
     {
-      name: "Stadspartnerskap",
-      price: "Skräddarsytt",
-      description: "Komplett anslagstavla för din stad",
+      name: "Kommun",
+      price: "Anpassat pris",
+      description: "Egen annonstavla för hela kommunen",
       features: [
-        "Dedikerad stadsanslagstavla",
-        "Anpassad design & domän", 
-        "Admin-dashboard",
-        "Invånarverifiering",
-        "Obegränsade stadsinlägg",
-        "Intäktsdelare-program",
-        "24/7 support"
+        "Egen annonstavla för kommunen",
+        "Era färger och logga", 
+        "Hantera användare och annonser",
+        "Verifiera invånare",
+        "Obegränsat med meddelanden",
+        "Tjäna pengar på företagsannonser",
+        "Support dygnet runt"
       ],
-      buttonText: "Bli Partner",
+      buttonText: "Kontakta Oss",
       buttonVariant: "hero" as const,
       popular: false,
       icon: <Crown className="w-6 h-6" />
@@ -68,11 +68,11 @@ const PricingSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Välj Din
-            <span className="text-primary"> Samhällsroll</span>
+            Välj Vad Som
+            <span className="text-primary"> Passar Dig</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Oavsett om du är invånare, företag eller stad - vi har den perfekta planen för att koppla samman ditt lokalsamhälle
+            Privatperson, företagare eller kommun - vi har rätt plan för alla
           </p>
         </div>
 
@@ -133,10 +133,10 @@ const PricingSection = () => {
 
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-4">
-            Frågor om priser eller behöver en skräddarsydd lösning?
+            Har du frågor eller behöver hjälp?
           </p>
           <Button variant="link" className="text-primary hover:text-primary-glow">
-            Kontakta vårt team →
+            Kontakta oss →
           </Button>
         </div>
       </div>

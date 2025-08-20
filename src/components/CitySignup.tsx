@@ -16,23 +16,23 @@ const CitySignup = () => {
   const benefits = [
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Engagera Invånare",
-      description: "Ge ditt lokalsamhälle en central plats för kommunikation"
+      title: "Aktivare Invånare",
+      description: "Ge invånarna en naturlig mötesplats online"
     },
     {
       icon: <Building2 className="w-6 h-6" />,
-      title: "Stöd Lokala Företag", 
-      description: "Hjälp lokala företag att nå invånare på ett effektivt sätt"
+      title: "Stärk Näringslivet", 
+      description: "Lokala företag når sina kunder enklare"
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Öka Synlighet",
-      description: "Gör stadsmeddelanden och uppdateringar mer tillgängliga"
+      title: "Bättre Information",
+      description: "Kommunala meddelanden når fram till alla"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Intäktsdelning",
-      description: "Tjäna på sponsrade inlägg och företagspartnerskap"
+      title: "Extra Intäkter",
+      description: "Tjäna pengar på företagsannonser"
     }
   ];
 
@@ -51,12 +51,12 @@ const CitySignup = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Ta Med Digitala Anslagstavlor till
-              <span className="text-primary"> Din Stad</span>
+              Vill Din Kommun Ha
+              <span className="text-primary"> Egen Annonstavla?</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Samarbeta med oss för att skapa ett blomstrande digitalt samhällsutrymme. 
-              Engagera invånare, stöd lokala företag och modernisera din stads kommunikation.
+              Vi hjälper er skapa en digital mötesplats där invånare, företag och kommun träffas. 
+              Modernt, enkelt och lönsamt.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ const CitySignup = () => {
             {/* Benefits */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-foreground mb-8">
-                Därför älskar städer vår plattform
+                Därför väljer kommuner oss
               </h3>
               
               {benefits.map((benefit, index) => (
@@ -91,22 +91,22 @@ const CitySignup = () => {
                   <Building2 className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  Kom igång med din stad
+                  Kom igång med er kommun
                 </h3>
                 <p className="text-muted-foreground">
-                  Anslut dig till hundratals städer som redan kopplar samman sina lokalsamhällen
+                  Över 150 kommuner använder redan vår annonstavla
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="cityName" className="block text-sm font-medium text-foreground mb-2">
-                    Stadsnamn
+                    Kommun
                   </label>
                   <Input
                     id="cityName"
                     type="text"
-                    placeholder="Göteborg"
+                    placeholder="Göteborgs kommun"
                     value={cityName}
                     onChange={(e) => setCityName(e.target.value)}
                     className="w-full"
@@ -116,12 +116,12 @@ const CitySignup = () => {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    Officiell kontakt-e-post
+                    Kontaktperson (e-post)
                   </label>
                   <Input
                     id="email"
                     type="email"
-                    placeholder="borgmastare@goteborg.se"
+                    placeholder="anna.andersson@goteborg.se"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full"
@@ -131,11 +131,11 @@ const CitySignup = () => {
 
                 <Button type="submit" variant="hero" className="w-full" size="lg">
                   <MapPin className="w-5 h-5" />
-                  Begär Stadspartnerskap
+                  Skicka Förfrågan
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center">
-                  Vi kontaktar dig inom 24 timmar för att diskutera din stads digitala anslagstavla
+                  Vi hör av oss inom 24 timmar för att prata om er kommuns annonstavla
                 </p>
               </form>
             </div>
@@ -145,19 +145,19 @@ const CitySignup = () => {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">150+</div>
-              <div className="text-muted-foreground">Partnerstäder</div>
+              <div className="text-muted-foreground">Kommuner</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">2,5M+</div>
-              <div className="text-muted-foreground">Lokalsamhälls-inlägg</div>
+              <div className="text-muted-foreground">Annonser</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">85%</div>
-              <div className="text-muted-foreground">Invånarengagemang</div>
+              <div className="text-muted-foreground">Nöjda Användare</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">500K+</div>
-              <div className="text-muted-foreground">Kr mån-intäkt i snitt</div>
+              <div className="text-muted-foreground">Kr/mån i snitt</div>
             </div>
           </div>
         </div>

@@ -23,23 +23,23 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
             Din Stads
             <span className="block bg-gradient-to-r from-white to-primary-foreground bg-clip-text text-transparent">
-              Digitala Anslagstavla
+              Annonstavla
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Koppla samman ditt lokalsamhälle med lokala meddelanden, evenemang och möjligheter. 
-            Upptäck automatiskt vad som händer i din stad.
+            Hitta evenemang, tjänster och meddelanden i din stad. 
+            Enkelt, lokalt och alltid aktuellt.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button variant="hero" size="lg" className="text-lg px-8 py-4">
               <MapPin className="w-5 h-5" />
-              Upptäck Min Stad
+              Hitta Min Stad
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20">
               <Megaphone className="w-5 h-5" />
-              Registrera Min Stad
+              Starta Min Stad
             </Button>
           </div>
 
@@ -49,24 +49,24 @@ const Hero = () => {
               <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4">
                 <MapPin className="w-8 h-8" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">Automatisk Plats</h3>
-              <p className="text-sm">Se din stads anslagstavla direkt</p>
+              <h3 className="font-semibold text-lg mb-2">Hittar Dig Själv</h3>
+              <p className="text-sm">Se din stads annonser direkt</p>
             </div>
 
             <div className="flex flex-col items-center text-primary-foreground/80">
               <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4">
                 <Users className="w-8 h-8" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">Invånardriven</h3>
-              <p className="text-sm">Riktiga inlägg från riktiga grannar</p>
+              <h3 className="font-semibold text-lg mb-2">Av Lokalbefolkningen</h3>
+              <p className="text-sm">Äkta annonser från dina grannar</p>
             </div>
 
             <div className="flex flex-col items-center text-primary-foreground/80">
               <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4">
                 <Megaphone className="w-8 h-8" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">Sponsorplatser</h3>
-              <p className="text-sm">Premium synlighet för lokala företag</p>
+              <h3 className="font-semibold text-lg mb-2">Företagsannonser</h3>
+              <p className="text-sm">Synlighet för lokala näringsidkare</p>
             </div>
           </div>
         </div>

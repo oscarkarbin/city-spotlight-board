@@ -6,10 +6,10 @@ const BulletinDemo = () => {
     {
       id: 1,
       type: "event",
-      title: "Sommartorg varje lördag",
-      content: "Varje lördag 08:00-14:00 på Centraltorget. Färska råvaror, lokalt hantverk och livemusik!",
-      author: "Stadsparker",
-      time: "2 timmar sedan",
+      title: "Lördagstorg på Centraltorget",
+      content: "Varje lördag 08-14. Ekologiska grönsaker, hembakat bröd och live-musik. Välkomna!",
+      author: "Göteborgs Stad",
+      time: "2 tim sedan",
       sponsored: false,
       color: "bg-yellow-100 border-yellow-200",
       icon: <Calendar className="w-4 h-4 text-yellow-600" />
@@ -17,10 +17,10 @@ const BulletinDemo = () => {
     {
       id: 2,
       type: "sponsor",
-      title: "🍕 Tonys Pizza - Stor öppning!",
-      content: "50% rabatt på alla pizzor denna helg! Familjeägt, äkta italienska recept. Storgatan 123.",
-      author: "Tonys Pizza",
-      time: "1 timme sedan",
+      title: "🍕 Marios Pizzeria - Stor invigning!",
+      content: "Halva priset på alla pizzor denna helg! Italiensk familjerecept sedan 1962. Storgatan 15.",
+      author: "Marios Pizzeria",
+      time: "1 tim sedan",
       sponsored: true,
       color: "bg-gradient-to-br from-red-100 to-orange-100 border-red-200",
       icon: <Star className="w-4 h-4 text-red-600" />
@@ -28,10 +28,10 @@ const BulletinDemo = () => {
     {
       id: 3,
       type: "community",
-      title: "Försvunnen katt - Musse",
-      content: "Orange katt, väldigt vänlig. Sist sedd nära Ekgatan. Ring om ni hittar! 📞 070-123 45 67",
-      author: "Sara M.",
-      time: "4 timmar sedan",
+      title: "Borttappad katt - Smirre",
+      content: "Röd korthår, mycket snäll. Försvann från Lindgatan. Hör av er om ni ser honom! 📞 070-123 45 67",
+      author: "Maria A.",
+      time: "4 tim sedan",
       sponsored: false,
       color: "bg-blue-100 border-blue-200",
       icon: <Heart className="w-4 h-4 text-blue-600" />
@@ -39,10 +39,10 @@ const BulletinDemo = () => {
     {
       id: 4,
       type: "sponsor",
-      title: "🏠 Johansson Mäkleri - Ditt drömhem väntar",
-      content: "Nya objekt varje vecka! Expertkunskap, 20+ års erfarenhet. Gratis konsultation.",
-      author: "Johansson Mäkleri",
-      time: "6 timmar sedan",
+      title: "🏠 Andersson Fastigheter - Vi hjälper dig hitta hem",
+      content: "Nya objekt varje vecka! 25 års erfarenhet av Göteborg. Kostnadsfri värdering.",
+      author: "Andersson Fastigheter",
+      time: "6 tim sedan",
       sponsored: true,
       color: "bg-gradient-to-br from-green-100 to-emerald-100 border-green-200",
       icon: <DollarSign className="w-4 h-4 text-green-600" />
@@ -50,10 +50,10 @@ const BulletinDemo = () => {
     {
       id: 5,
       type: "announcement",
-      title: "Vägarbeten - viktigt meddelande",
-      content: "Storgatan mellan 1:a och 3:e gatan stängd måndag-onsdag. Använd alternativa vägar.",
-      author: "Tekniska",
-      time: "8 timmar sedan",
+      title: "Vägarbete på Storgatan",
+      content: "Storgatan avstängd mellan Första och Tredje gatan måndag-onsdag. Kör via Kyrkogatan.",
+      author: "Trafikverket",
+      time: "8 tim sedan",
       sponsored: false,
       color: "bg-orange-100 border-orange-200",
       icon: <MapPin className="w-4 h-4 text-orange-600" />
@@ -61,10 +61,10 @@ const BulletinDemo = () => {
     {
       id: 6,
       type: "community",
-      title: "Barnvakt tillgänglig",
-      content: "Erfaren, HLR-utbildad. Tillgänglig kvällar och helger. Referenser finns!",
-      author: "Emma K.",
-      time: "12 timmar sedan",
+      title: "Barnvakt sökes",
+      content: "Erfaren barnvakt (HLR-utbildad) tillgänglig kvällar och helger. Kan fixa referenser!",
+      author: "Lisa K.",
+      time: "12 tim sedan",
       sponsored: false,
       color: "bg-purple-100 border-purple-200",
       icon: <Heart className="w-4 h-4 text-purple-600" />
@@ -78,11 +78,11 @@ const BulletinDemo = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Se vad som händer i
-            <span className="text-primary"> Göteborg</span>
+            Vad händer i
+            <span className="text-primary"> Göteborg</span> idag?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Riktiga inlägg från ditt lokalsamhälle - automatiskt organiserade och alltid uppdaterade
+            Äkta annonser från grannar och företag - alltid fräscht och lokalt
           </p>
         </div>
 
@@ -129,7 +129,7 @@ const BulletinDemo = () => {
           <div className="text-center mt-12">
             <Button variant="sponsor" size="lg">
               <MapPin className="w-5 h-5" />
-              Se Hela Göteborgs Anslagstavla
+              Visa Hela Göteborgs Annonstavla
             </Button>
           </div>
         </div>
