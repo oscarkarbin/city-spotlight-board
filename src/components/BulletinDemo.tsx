@@ -6,10 +6,10 @@ const BulletinDemo = () => {
     {
       id: 1,
       type: "event",
-      title: "Summer Farmers Market",
-      content: "Every Saturday 8AM-2PM at Central Park. Fresh produce, local crafts, and live music!",
-      author: "City Parks Dept",
-      time: "2 hours ago",
+      title: "Sommartorg varje lördag",
+      content: "Varje lördag 08:00-14:00 på Centraltorget. Färska råvaror, lokalt hantverk och livemusik!",
+      author: "Stadsparker",
+      time: "2 timmar sedan",
       sponsored: false,
       color: "bg-yellow-100 border-yellow-200",
       icon: <Calendar className="w-4 h-4 text-yellow-600" />
@@ -17,10 +17,10 @@ const BulletinDemo = () => {
     {
       id: 2,
       type: "sponsor",
-      title: "🍕 Tony's Pizza - Grand Opening!",
-      content: "50% off all pizzas this weekend! Family-owned, authentic Italian recipes. 123 Main St.",
-      author: "Tony's Pizza",
-      time: "1 hour ago",
+      title: "🍕 Tonys Pizza - Stor öppning!",
+      content: "50% rabatt på alla pizzor denna helg! Familjeägt, äkta italienska recept. Storgatan 123.",
+      author: "Tonys Pizza",
+      time: "1 timme sedan",
       sponsored: true,
       color: "bg-gradient-to-br from-red-100 to-orange-100 border-red-200",
       icon: <Star className="w-4 h-4 text-red-600" />
@@ -28,10 +28,10 @@ const BulletinDemo = () => {
     {
       id: 3,
       type: "community",
-      title: "Lost Cat - Mr. Whiskers",
-      content: "Orange tabby, very friendly. Last seen near Oak Street. Please call if found! 📞 (555) 123-4567",
-      author: "Sarah M.",
-      time: "4 hours ago",
+      title: "Försvunnen katt - Musse",
+      content: "Orange katt, väldigt vänlig. Sist sedd nära Ekgatan. Ring om ni hittar! 📞 070-123 45 67",
+      author: "Sara M.",
+      time: "4 timmar sedan",
       sponsored: false,
       color: "bg-blue-100 border-blue-200",
       icon: <Heart className="w-4 h-4 text-blue-600" />
@@ -39,10 +39,10 @@ const BulletinDemo = () => {
     {
       id: 4,
       type: "sponsor",
-      title: "🏠 Johnson Realty - Your Dream Home Awaits",
-      content: "New listings every week! Expert local knowledge, 20+ years experience. Free consultation.",
-      author: "Johnson Realty",
-      time: "6 hours ago",
+      title: "🏠 Johansson Mäkleri - Ditt drömhem väntar",
+      content: "Nya objekt varje vecka! Expertkunskap, 20+ års erfarenhet. Gratis konsultation.",
+      author: "Johansson Mäkleri",
+      time: "6 timmar sedan",
       sponsored: true,
       color: "bg-gradient-to-br from-green-100 to-emerald-100 border-green-200",
       icon: <DollarSign className="w-4 h-4 text-green-600" />
@@ -50,10 +50,10 @@ const BulletinDemo = () => {
     {
       id: 5,
       type: "announcement",
-      title: "Road Construction Update",
-      content: "Main Street between 1st and 3rd Ave will be closed Mon-Wed. Use alternate routes.",
-      author: "City Works",
-      time: "8 hours ago",
+      title: "Vägarbeten - viktigt meddelande",
+      content: "Storgatan mellan 1:a och 3:e gatan stängd måndag-onsdag. Använd alternativa vägar.",
+      author: "Tekniska",
+      time: "8 timmar sedan",
       sponsored: false,
       color: "bg-orange-100 border-orange-200",
       icon: <MapPin className="w-4 h-4 text-orange-600" />
@@ -61,10 +61,10 @@ const BulletinDemo = () => {
     {
       id: 6,
       type: "community",
-      title: "Babysitter Available",
-      content: "Experienced, CPR certified. Available evenings and weekends. References available!",
+      title: "Barnvakt tillgänglig",
+      content: "Erfaren, HLR-utbildad. Tillgänglig kvällar och helger. Referenser finns!",
       author: "Emma K.",
-      time: "12 hours ago",
+      time: "12 timmar sedan",
       sponsored: false,
       color: "bg-purple-100 border-purple-200",
       icon: <Heart className="w-4 h-4 text-purple-600" />
@@ -78,11 +78,11 @@ const BulletinDemo = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            See What's Happening in
-            <span className="text-primary"> Springfield</span>
+            Se vad som händer i
+            <span className="text-primary"> Göteborg</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real posts from your community - automatically organized and always up to date
+            Riktiga inlägg från ditt lokalsamhälle - automatiskt organiserade och alltid uppdaterade
           </p>
         </div>
 
@@ -101,7 +101,7 @@ const BulletinDemo = () => {
               >
                 {post.sponsored && (
                   <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full font-semibold shadow-lg">
-                    SPONSORED
+                    SPONSRAD
                   </div>
                 )}
                 
@@ -129,7 +129,7 @@ const BulletinDemo = () => {
           <div className="text-center mt-12">
             <Button variant="sponsor" size="lg">
               <MapPin className="w-5 h-5" />
-              View Full Springfield Board
+              Se Hela Göteborgs Anslagstavla
             </Button>
           </div>
         </div>

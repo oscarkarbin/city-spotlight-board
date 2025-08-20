@@ -4,53 +4,53 @@ import { Check, Crown, Star, Zap } from "lucide-react";
 const PricingSection = () => {
   const plans = [
     {
-      name: "Community Post",
-      price: "Free",
-      description: "Perfect for residents sharing with neighbors",
+      name: "Gratis Inlägg",
+      price: "Gratis",
+      description: "Perfekt för invånare som vill dela med grannar",
       features: [
-        "Unlimited community posts",
-        "Auto-location detection", 
-        "Basic post categories",
-        "7-day post duration",
-        "Community engagement"
+        "Obegränsade lokala inlägg",
+        "Automatisk platsdetektering", 
+        "Grundläggande kategorier",
+        "7 dagars varaktighet",
+        "Invånarengagemang"
       ],
-      buttonText: "Start Posting",
+      buttonText: "Börja Posta",
       buttonVariant: "outline" as const,
       popular: false,
       icon: <Star className="w-6 h-6" />
     },
     {
-      name: "Local Business",
-      price: "$29",
-      period: "/month",
-      description: "Boost your local business visibility",
+      name: "Lokalt Företag",
+      price: "299",
+      period: " kr/mån",
+      description: "Öka ditt lokala företags synlighet",
       features: [
-        "Everything in Community",
-        "Featured business posts",
-        "30-day post duration",
-        "Business profile page",
-        "Priority placement",
-        "Analytics dashboard"
+        "Allt i Gratis-planen",
+        "Utvalda företagsinlägg",
+        "30 dagars varaktighet",
+        "Företagsprofilsida",
+        "Prioriterad placering",
+        "Analysdashboard"
       ],
-      buttonText: "Grow My Business",
+      buttonText: "Marknadsför Mitt Företag",
       buttonVariant: "sponsor" as const,
       popular: true,
       icon: <Zap className="w-6 h-6" />
     },
     {
-      name: "City Partnership",
-      price: "Custom",
-      description: "Complete bulletin board for your city",
+      name: "Stadspartnerskap",
+      price: "Skräddarsytt",
+      description: "Komplett anslagstavla för din stad",
       features: [
-        "Dedicated city bulletin board",
-        "Custom branding & domain", 
-        "Admin dashboard",
-        "Resident verification",
-        "Unlimited city posts",
-        "Revenue sharing program",
+        "Dedikerad stadsanslagstavla",
+        "Anpassad design & domän", 
+        "Admin-dashboard",
+        "Invånarverifiering",
+        "Obegränsade stadsinlägg",
+        "Intäktsdelare-program",
         "24/7 support"
       ],
-      buttonText: "Partner With Us",
+      buttonText: "Bli Partner",
       buttonVariant: "hero" as const,
       popular: false,
       icon: <Crown className="w-6 h-6" />
@@ -68,11 +68,11 @@ const PricingSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Choose Your
-            <span className="text-primary"> Community Role</span>
+            Välj Din
+            <span className="text-primary"> Samhällsroll</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Whether you're a resident, business, or city - we have the perfect plan to connect your community
+            Oavsett om du är invånare, företag eller stad - vi har den perfekta planen för att koppla samman ditt lokalsamhälle
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const PricingSection = () => {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    Most Popular
+                    Mest Populär
                   </div>
                 </div>
               )}
@@ -133,10 +133,10 @@ const PricingSection = () => {
 
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-4">
-            Questions about pricing or need a custom solution?
+            Frågor om priser eller behöver en skräddarsydd lösning?
           </p>
           <Button variant="link" className="text-primary hover:text-primary-glow">
-            Contact our team →
+            Kontakta vårt team →
           </Button>
         </div>
       </div>

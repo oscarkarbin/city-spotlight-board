@@ -16,23 +16,23 @@ const CitySignup = () => {
   const benefits = [
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Engage Residents",
-      description: "Give your community a central hub for communication"
+      title: "Engagera Invånare",
+      description: "Ge ditt lokalsamhälle en central plats för kommunikation"
     },
     {
       icon: <Building2 className="w-6 h-6" />,
-      title: "Support Local Business", 
-      description: "Help local businesses reach residents effectively"
+      title: "Stöd Lokala Företag", 
+      description: "Hjälp lokala företag att nå invånare på ett effektivt sätt"
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Increase Visibility",
-      description: "Make city announcements and updates more accessible"
+      title: "Öka Synlighet",
+      description: "Gör stadsmeddelanden och uppdateringar mer tillgängliga"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Revenue Share",
-      description: "Earn from sponsored posts and business partnerships"
+      title: "Intäktsdelning",
+      description: "Tjäna på sponsrade inlägg och företagspartnerskap"
     }
   ];
 
@@ -51,12 +51,12 @@ const CitySignup = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Bring Digital Bulletins to
-              <span className="text-primary"> Your City</span>
+              Ta Med Digitala Anslagstavlor till
+              <span className="text-primary"> Din Stad</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Partner with us to create a thriving digital community space. 
-              Engage residents, support local businesses, and modernize your city's communication.
+              Samarbeta med oss för att skapa ett blomstrande digitalt samhällsutrymme. 
+              Engagera invånare, stöd lokala företag och modernisera din stads kommunikation.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ const CitySignup = () => {
             {/* Benefits */}
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-foreground mb-8">
-                Why Cities Love Our Platform
+                Därför älskar städer vår plattform
               </h3>
               
               {benefits.map((benefit, index) => (
@@ -91,22 +91,22 @@ const CitySignup = () => {
                   <Building2 className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  Get Your City Started
+                  Kom igång med din stad
                 </h3>
                 <p className="text-muted-foreground">
-                  Join hundreds of cities already connecting their communities
+                  Anslut dig till hundratals städer som redan kopplar samman sina lokalsamhällen
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="cityName" className="block text-sm font-medium text-foreground mb-2">
-                    City Name
+                    Stadsnamn
                   </label>
                   <Input
                     id="cityName"
                     type="text"
-                    placeholder="Springfield"
+                    placeholder="Göteborg"
                     value={cityName}
                     onChange={(e) => setCityName(e.target.value)}
                     className="w-full"
@@ -116,12 +116,12 @@ const CitySignup = () => {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    Official Contact Email
+                    Officiell kontakt-e-post
                   </label>
                   <Input
                     id="email"
                     type="email"
-                    placeholder="mayor@springfield.gov"
+                    placeholder="borgmastare@goteborg.se"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full"
@@ -131,11 +131,11 @@ const CitySignup = () => {
 
                 <Button type="submit" variant="hero" className="w-full" size="lg">
                   <MapPin className="w-5 h-5" />
-                  Request City Partnership
+                  Begär Stadspartnerskap
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center">
-                  We'll contact you within 24 hours to discuss your city's digital bulletin board
+                  Vi kontaktar dig inom 24 timmar för att diskutera din stads digitala anslagstavla
                 </p>
               </form>
             </div>
@@ -145,19 +145,19 @@ const CitySignup = () => {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">150+</div>
-              <div className="text-muted-foreground">Partner Cities</div>
+              <div className="text-muted-foreground">Partnerstäder</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">2.5M+</div>
-              <div className="text-muted-foreground">Community Posts</div>
+              <div className="text-3xl font-bold text-primary mb-2">2,5M+</div>
+              <div className="text-muted-foreground">Lokalsamhälls-inlägg</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">85%</div>
-              <div className="text-muted-foreground">Resident Engagement</div>
+              <div className="text-muted-foreground">Invånarengagemang</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">$50K+</div>
-              <div className="text-muted-foreground">Avg. Monthly Revenue</div>
+              <div className="text-3xl font-bold text-primary mb-2">500K+</div>
+              <div className="text-muted-foreground">Kr mån-intäkt i snitt</div>
             </div>
           </div>
         </div>
