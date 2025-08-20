@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Building2, MapPin, Users, Zap } from "lucide-react";
+import { Building2, Clock, Users, Zap } from "lucide-react";
 import { useState } from "react";
 const CitySignup = () => {
   const [email, setEmail] = useState("");
@@ -26,9 +26,9 @@ const CitySignup = () => {
     title: "Bättre Information",
     description: "Kommunala meddelanden når fram till alla"
   }, {
-    icon: <MapPin className="w-6 h-6" />,
-    title: "Extra Intäkter",
-    description: "Tjäna pengar på företagsannonser"
+    icon: <Clock className="w-6 h-6" />,
+    title: "Direkta Notiser",
+    description: "Skicka viktiga meddelanden direkt till invånarna"
   }];
   return <section className="py-20 bg-gradient-warm relative overflow-hidden">
       <div className="absolute inset-0 cork-texture opacity-10"></div>
@@ -109,7 +109,7 @@ const CitySignup = () => {
                 </div>
 
                 <Button type="submit" variant="hero" className="w-full" size="lg">
-                  <MapPin className="w-5 h-5" />
+                  <Clock className="w-5 h-5" />
                   Skicka Förfrågan
                 </Button>
 
