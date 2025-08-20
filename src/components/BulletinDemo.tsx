@@ -1,7 +1,41 @@
 import { Calendar, Clock, DollarSign, Heart, MapPin, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 const BulletinDemo = () => {
+  const cities = [
+    "Göteborg",
+    "Stockholm", 
+    "Malmö",
+    "Uppsala",
+    "Västerås",
+    "Örebro",
+    "Linköping",
+    "Helsingborg",
+    "Jönköping",
+    "Norrköping",
+    "Lund",
+    "Umeå",
+    "Gävle",
+    "Borås",
+    "Eskilstuna",
+    "Halmstad",
+    "Växjö",
+    "Karlstad",
+    "Sundsvall",
+    "Trollhättan"
+  ];
+
+  const [currentCityIndex, setCurrentCityIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentCityIndex((prevIndex) => (prevIndex + 1) % cities.length);
+    }, 2000); // Växlar var 2:a sekund
+
+    return () => clearInterval(interval);
+  }, [cities.length]);
+
   const posts = [
     {
       id: 1,
@@ -79,7 +113,9 @@ const BulletinDemo = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Vad händer i
-            <span className="text-primary"> Göteborg</span> idag?
+            <span className="text-primary inline-block min-w-[200px] transition-all duration-500 ease-in-out transform">
+              {" " + cities[currentCityIndex]}
+            </span> idag?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Äkta annonser från grannar och företag - alltid fräscht och lokalt
@@ -129,7 +165,7 @@ const BulletinDemo = () => {
           <div className="text-center mt-12">
             <Button variant="sponsor" size="lg">
               <MapPin className="w-5 h-5" />
-              Visa Hela Göteborgs Annonstavla
+              Visa Hela {cities[currentCityIndex]}s Annonstavla
             </Button>
           </div>
         </div>
