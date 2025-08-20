@@ -20,5 +20,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   base: '/city-spotlight-board/',
+  
 }));
   
