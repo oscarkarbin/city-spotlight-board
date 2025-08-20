@@ -2,49 +2,46 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Building2, MapPin, Users, Zap } from "lucide-react";
 import { useState } from "react";
-
 const CitySignup = () => {
   const [email, setEmail] = useState("");
   const [cityName, setCityName] = useState("");
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
-    console.log("City signup:", { email, cityName });
+    console.log("City signup:", {
+      email,
+      cityName
+    });
   };
-
-  const benefits = [
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Aktivare Invånare",
-      description: "Ge invånarna en naturlig mötesplats online"
-    },
-    {
-      icon: <Building2 className="w-6 h-6" />,
-      title: "Stärk Näringslivet", 
-      description: "Lokala företag når sina kunder enklare"
-    },
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Bättre Information",
-      description: "Kommunala meddelanden når fram till alla"
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Extra Intäkter",
-      description: "Tjäna pengar på företagsannonser"
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-warm relative overflow-hidden">
+  const benefits = [{
+    icon: <Users className="w-6 h-6" />,
+    title: "Aktivare Invånare",
+    description: "Ge invånarna en naturlig mötesplats online"
+  }, {
+    icon: <Building2 className="w-6 h-6" />,
+    title: "Stärk Näringslivet",
+    description: "Lokala företag når sina kunder enklare"
+  }, {
+    icon: <Zap className="w-6 h-6" />,
+    title: "Bättre Information",
+    description: "Kommunala meddelanden når fram till alla"
+  }, {
+    icon: <MapPin className="w-6 h-6" />,
+    title: "Extra Intäkter",
+    description: "Tjäna pengar på företagsannonser"
+  }];
+  return <section className="py-20 bg-gradient-warm relative overflow-hidden">
       <div className="absolute inset-0 cork-texture opacity-10"></div>
       
       {/* Floating elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-10 w-6 h-6 bg-primary/20 rounded-full float-animation"></div>
-        <div className="absolute top-1/2 right-20 w-8 h-8 bg-primary/15 rounded-full float-animation" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-1/3 left-1/3 w-4 h-4 bg-primary/25 rounded-full float-animation" style={{animationDelay: '3s'}}></div>
+        <div className="absolute top-1/2 right-20 w-8 h-8 bg-primary/15 rounded-full float-animation" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-4 h-4 bg-primary/25 rounded-full float-animation" style={{
+        animationDelay: '3s'
+      }}></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -67,8 +64,7 @@ const CitySignup = () => {
                 Därför väljer kommuner oss
               </h3>
               
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4 group">
+              {benefits.map((benefit, index) => <div key={index} className="flex items-start gap-4 group">
                   <div className="flex-shrink-0 w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center text-primary-foreground group-hover:scale-110 transition-transform duration-300">
                     {benefit.icon}
                   </div>
@@ -80,8 +76,7 @@ const CitySignup = () => {
                       {benefit.description}
                     </p>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             {/* Signup Form */}
@@ -103,30 +98,14 @@ const CitySignup = () => {
                   <label htmlFor="cityName" className="block text-sm font-medium text-foreground mb-2">
                     Kommun
                   </label>
-                  <Input
-                    id="cityName"
-                    type="text"
-                    placeholder="Göteborgs kommun"
-                    value={cityName}
-                    onChange={(e) => setCityName(e.target.value)}
-                    className="w-full"
-                    required
-                  />
+                  <Input id="cityName" type="text" placeholder="Göteborgs kommun" value={cityName} onChange={e => setCityName(e.target.value)} className="w-full" required />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                     Kontaktperson (e-post)
                   </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="anna.andersson@goteborg.se"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full"
-                    required
-                  />
+                  <Input id="email" type="email" placeholder="anna.andersson@goteborg.se" value={email} onChange={e => setEmail(e.target.value)} className="w-full" required />
                 </div>
 
                 <Button type="submit" variant="hero" className="w-full" size="lg">
@@ -142,28 +121,9 @@ const CitySignup = () => {
           </div>
 
           {/* Stats */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">150+</div>
-              <div className="text-muted-foreground">Kommuner</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">2,5M+</div>
-              <div className="text-muted-foreground">Annonser</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">85%</div>
-              <div className="text-muted-foreground">Nöjda Användare</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">500K+</div>
-              <div className="text-muted-foreground">Kr/mån i snitt</div>
-            </div>
-          </div>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CitySignup;
