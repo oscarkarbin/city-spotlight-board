@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Building2, Clock, Users, Zap } from "lucide-react";
+import { Bell, Building2, Users, Zap } from "lucide-react";
 import { useState } from "react";
 const CitySignup = () => {
   const [email, setEmail] = useState("");
@@ -26,7 +26,7 @@ const CitySignup = () => {
     title: "Bättre Information",
     description: "Kommunala meddelanden når fram till alla"
   }, {
-    icon: <Clock className="w-6 h-6" />,
+    icon: <Bell className="w-6 h-6" />,
     title: "Direkta Notiser",
     description: "Skicka viktiga meddelanden direkt till invånarna"
   }];
@@ -109,7 +109,7 @@ const CitySignup = () => {
                 </div>
 
                 <Button type="submit" variant="hero" className="w-full" size="lg">
-                  <Clock className="w-5 h-5" />
+                  <Bell className="w-5 h-5" />
                   Skicka Förfrågan
                 </Button>
 
