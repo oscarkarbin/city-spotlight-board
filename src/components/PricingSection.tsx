@@ -37,24 +37,7 @@ const PricingSection = () => {
       popular: true,
       icon: <Zap className="w-6 h-6" />
     },
-    {
-      name: "Kommun",
-      price: "Anpassat pris",
-      description: "Egen annonstavla för hela kommunen",
-      features: [
-        "Egen annonstavla för kommunen",
-        "Era färger och logga", 
-        "Hantera användare och annonser",
-        "Verifiera invånare",
-        "Obegränsat med meddelanden",
-        "Tjäna pengar på företagsannonser",
-        "Support dygnet runt"
-      ],
-      buttonText: "Kontakta Oss",
-      buttonVariant: "hero" as const,
-      popular: false,
-      icon: <Crown className="w-6 h-6" />
-    }
+ 
   ];
 
   return (
@@ -76,7 +59,7 @@ const PricingSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={plan.name}

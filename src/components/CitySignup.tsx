@@ -88,9 +88,7 @@ const CitySignup = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   Kom igång med er kommun
                 </h3>
-                <p className="text-muted-foreground">
-                  Över 150 kommuner använder redan vår annonstavla
-                </p>
+
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
