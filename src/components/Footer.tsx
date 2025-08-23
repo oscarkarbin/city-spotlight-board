@@ -101,13 +101,7 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm text-center md:text-left">
             © 2024 Annonstavlan.se. Alla rättigheter förbehållna.
           </p>
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span>Över 150 kommuner</span>
-            <span>•</span>
-            <span>500,000+ användare</span>
-            <span>•</span>
-            <span>Sedan 2020</span>
-          </div>
+          
         </div>
       </div>
     </footer>
